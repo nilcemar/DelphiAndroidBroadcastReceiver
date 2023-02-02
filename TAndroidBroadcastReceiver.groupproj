@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{481B0527-A520-4DD9-82DF-582E153773BD}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="delphiAndroidBroadcastReceiver.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="delphiAndroidBroadcastReceiver">
+        <MSBuild Projects="delphiAndroidBroadcastReceiver.dproj"/>
+    </Target>
+    <Target Name="delphiAndroidBroadcastReceiver:Clean">
+        <MSBuild Projects="delphiAndroidBroadcastReceiver.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="delphiAndroidBroadcastReceiver:Make">
+        <MSBuild Projects="delphiAndroidBroadcastReceiver.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="delphiAndroidBroadcastReceiver"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="delphiAndroidBroadcastReceiver:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="delphiAndroidBroadcastReceiver:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
