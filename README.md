@@ -1,7 +1,8 @@
 #Delphi TBroadcastReceiver Component
 
- A Delphi component for send and receive Android Intent Broadcast messages, for you can easy integrate your applications with devices native SDK 
- Um componente Delphi para enviar e receber mensagens Android Intent Broadcast, para que você possa integrar facilmente seus aplicativos com SDK nativos de dispositivos.
+ 🇺🇸 - A Delphi component for send and receive Android Intent Broadcast messages, for you can easy integrate your applications with devices native SDK.
+ 
+ 🇧🇷 - Um componente Delphi para enviar e receber mensagens Android Intent Broadcast, para que você possa integrar facilmente seus aplicativos com SDK nativos de dispositivos.
 
 ## Installation
 
